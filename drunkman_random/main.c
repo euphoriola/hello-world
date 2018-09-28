@@ -47,25 +47,26 @@ int main()
     for (i = 0; i < 100000; i++) {
         rlt = invoke_random(1, 100, 0);
         // printf("%d\n", invoke_random(1, 100, 0));
-        if (0 <= rlt && rlt <= 10) {
+        if (0 <= rlt && rlt <= 10) { /*the drunk man in home*/
             h++;
         }
-        else if (11 <= rlt && rlt <= 40) {
+        else if (11 <= rlt && rlt <= 40) { /*the drunk man in bar C*/
             c++;
         }
-        else if (41 <= rlt && rlt <= 70) {
+        else if (41 <= rlt && rlt <= 70) { /*the drunk man in bar B*/
             b++;
         }
-        else if (71 <= rlt && rlt <= 100) {
+        else if (71 <= rlt && rlt <= 100) { /*the drunk man in bar A*/
             a++;
         }
         else {
             /* code */
         }
 
+        //start
         if (rlt <= 70) { /*not in bar A*/
             if (rlt <= 40) { /*not in bar B*/
-                if (10 < rlt) {
+                if (10 < rlt) { /*the man is drunk*/
                     drunk += 1.0f;
                 } else {
                     home += 1.0f;
