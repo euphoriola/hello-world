@@ -1,6 +1,6 @@
-#随手记录工作中的心得,小技巧
+# 随手记录工作中的心得,小技巧
 ---
-###如何在控制台，用up按钮检索相近命令
+### 如何在控制台，用up按钮检索相近命令
 
 编辑(没有则新建) ~/.inputrc ，写入如下内容，然后重新启动控制台。
 ```
@@ -11,7 +11,7 @@ set completion-ignore-case on
 ```
 ---
 
-###为adb添加设备权限
+### 为adb添加设备权限
 编辑(没有则新建) /etc/udev/rules.d/51-android.rules ，写入如下内容，然后重新插拔usb接口。
 ```
 SUBSYSTEM=="usb", ATTRS{idVendor}=="0e8d", ATTRS{idProduct}=="201c",MODE="0666"
@@ -23,7 +23,7 @@ idVendor和idProduct的值可通过lsusb命令获取
 
 ---
 
-###解析elf文件进行debug
+### 解析elf文件进行debug
 程序有时会启动时直接崩溃,不输出任何log
 可能的原因是有未定义的函数声明运行时在动态库中未找到它的实现
 通过解析程序编译时的中间产物elf文件
