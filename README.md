@@ -24,7 +24,7 @@ Now or never!
 1. 这是一个有序列表
 2. 这是一个有序列表
 ---
-```
+``` c
 #include <stdio.h>
 int main(int argc, char *argv[])
 {
